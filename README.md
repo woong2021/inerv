@@ -1,24 +1,9 @@
-# inerv-irs
+## Inerv-IRS
 
-## Project setup
-```
-npm install
-```
+### 업무프로세스
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#### 2021.08.24
 
-### Compiles and minifies for production
 ```
-npm run build
+- "inerv-irs" 프로젝트 생성 및 파일설치
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
