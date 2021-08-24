@@ -5,5 +5,31 @@
 
 header{
   border: 1px solid #cccccc;
-  box-shadow: 0, 0, 0;
+  height: 80px;
+  line-height: 80px;
+  
+  > ul{
+    position: relative;
+    display: flex;
+    margin: 0 20px;
+
+    .logo{
+      width: 100px;
+      margin-right: 100px;
+    }
+    .gnb-menu{
+      ul{
+        display: flex;
+
+        li{
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .utile{
+      position: absolute;
+      right: 0;
+    }
+  }
 }

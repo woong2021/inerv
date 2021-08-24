@@ -1,0 +1,64 @@
+// *----------------------------
+//	Content
+// ----------------------------*
+main{
+  // display: flex;
+  // justify-content: space-between;
+  background: #f3f7fa;
+}
+
+section{
+  position: relative;
+
+  &#lnb{
+    background: #3f4d66;
+    width: 250px;
+    height: 100vh;
+    left: 0;
+    transition: left .5s;
+    float: left;
+    
+    @media (min-width: 0) and (max-width: 768px){
+      left: -250px;
+    }
+    ul{
+      li{
+        color: white;
+        font : {
+          size: 18px;
+        }
+
+        @media (min-width: 0) and (max-width: 768px){
+          font : {
+            size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  &#content{
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    border:1px solid blue;
+    box-sizing: border-box;
+
+    &:after{
+      content:"";
+      clear: both;
+    }
+
+    article{
+      position: absolute;
+      border: 1px solid red;
+      width: 80%; 
+      right: 0;
+
+      @media (min-width: 0) and (max-width: 768px){
+        width: 100%;
+      }
+    }
+  }
+}
+

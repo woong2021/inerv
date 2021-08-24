@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import NoticeList from '../submenu/irs/user/NoticeList.vue';
-import AuthorityList from '../submenu/system/security/AuthorityManagement.vue';
+import NoticeList from '../components/content/irs/user/NoticeList.vue';
+import AuthorityList from '../components/content/system/security/AuthorityManagement.vue';
 
 Vue.use(VueRouter);
 

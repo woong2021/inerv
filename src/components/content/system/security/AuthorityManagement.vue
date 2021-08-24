@@ -1,7 +1,7 @@
 <template>
-  <main id="container">
+  <section id="content">
     권한관리
-  </main>
+  </section>
 </template>
 
 <script>
