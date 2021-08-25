@@ -1,0 +1,8 @@
+// *----------------------------
+//	Mixin
+// ----------------------------*
+
+@mixin btnHover($color: #134e57, $transparency : 5%){
+	background: darken($color, $transparency) !important;
+    color: #fff !important;
+}

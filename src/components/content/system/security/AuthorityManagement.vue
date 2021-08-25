@@ -1,6 +1,8 @@
 <template>
-  <section id="content">
-    권한관리
+<section id="content">
+    <article>
+      <h2>권한관리</h2>
+    </article>
   </section>
 </template>
 

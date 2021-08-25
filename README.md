@@ -1,4 +1,5 @@
 ## Inerv-IRS
+
 ### 가이드라인
 
 ### 업무프로세스
@@ -13,3 +14,11 @@
 ```
 
 #### 2021.08.25
+
+```
+- [inerv-irs] Vue.js 오류 수정
+- [inerv-irs] 기본 레이아웃 반응형 작업 진행
+- [inerv-irs] SASS 모듈화 작업
+- [inerv-irs] "LNB" UI 작업
+- [inerv-irs] "행안부 연계 테스트" 페이지 작업
+```

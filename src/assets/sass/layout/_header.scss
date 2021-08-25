@@ -4,19 +4,23 @@
 // ----------------------------*
 
 header{
-  border: 1px solid #cccccc;
+  display: flex;
+  margin-left: 20px;
   height: 80px;
   line-height: 80px;
   
-  > ul{
-    position: relative;
-    display: flex;
-    margin: 0 20px;
+  .logo{
+    width: 100px;
+    margin-right: 100px;
 
-    .logo{
-      width: 100px;
-      margin-right: 100px;
+    @media (min-width: 0) and (max-width: 1024px){
+      margin-right: 0;
     }
+  }
+
+  > ul{
+    display: flex;
+
     .gnb-menu{
       ul{
         display: flex;
@@ -29,6 +33,7 @@ header{
 
     .utile{
       position: absolute;
+      margin-right: 20px;
       right: 0;
     }
   }

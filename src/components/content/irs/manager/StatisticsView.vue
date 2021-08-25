@@ -1,7 +1,7 @@
 <template>
-  <section id="content">
+    <section id="content">
     <article>
-      <h2>공지사항</h2>
+      <h2>이용통계</h2>
     </article>
   </section>
 </template>
@@ -11,8 +11,9 @@ export default {
 
 }
 </script>
+
 <style lang="scss">
-  html{
-    
-  }
+html{
+
+}
 </style>

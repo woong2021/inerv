@@ -19,36 +19,149 @@ section{
     @media (min-width: 0) and (max-width: 1024px){
       left: -250px;
     }
-    ul{
-      li{
-        color: white;
-        font : {
-          size: 1.2rem;
+
+    nav{
+      > ul{
+        > li{
+           > a{
+            display: block;
+            padding: 15px;
+            color: white;
+
+            font : {
+              size: 1.125rem;
+            }
+
+            &:after{
+              content: "\f078";
+              position: absolute;
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              right: 20px;
+            }
+
+            &.on{
+              &:after{
+                content: "\f077";
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                right: 20px;
+              } 
+            }
+          }
+
+          ul{
+            li{
+              a{
+                display: block;
+                border-bottom: 1px solid #51607c;
+                background: #333f54;
+                padding: 10px 15px;
+                color: #97a5c0;
+                font-size: 1rem;
+              }
+            }
+          }
         }
       }
-    }
+    }   
   }
   
   &#content{
-    padding: 20px;
-    width: 100%;
+    position: relative;
+    margin-left: 250px;
+    padding: 20px 40px;
     height: 100vh;
     box-sizing: border-box;
+
+    @media (min-width: 0) and (max-width: 1024px){
+      margin-left: 0;
+      padding: 20px 10px;
+    }
 
     &:after{
       content:"";
       clear: both;
     }
-
-    article{
+    .content-inner{
       position: absolute;
-      border: 1px solid;
-      width: 80%; 
-      right: 0;
+      width: 95%;
 
-      @media (min-width: 0) and (max-width: 1024px){
-        width: 100%;
-        right: -25px;
+      article{
+        &#title{
+          display: flex;
+          width: 100%;
+          justify-content: space-between; 
+          box-sizing: border-box;
+  
+          @media (min-width: 0) and (max-width: 1024px){
+            margin: 0;
+            width: 90%;
+          }
+  
+          div{
+            ul{
+              display: flex;
+    
+              li{
+                position: relative;
+                margin-right: 20px;
+    
+                &::after{
+                  content:"\f054";
+                  position: absolute;
+                  font-family: "Font Awesome 5 Free";
+                  font-weight: 700;
+                  top: 4px;
+                  right: -15px;
+    
+                }
+    
+                &:first-child{
+                  &::before{
+                    content:"\f015";
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 700;
+                    top: 3px;
+                    right: 5px;
+                  }
+    
+                  &::after{
+                    content:"\f054";
+                    position: absolute;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 700;
+                    right: -14px;
+      
+                  }
+                }
+    
+                &:last-child{
+                  margin-right: 0;
+    
+                  &::after{
+                    content:'';
+                  }
+                }
+              }
+            }
+  
+            @media (min-width: 0) and (max-width: 1024px){
+              display: none;
+            }
+          }
+        }
+        
+        .content-box{
+          background: white;
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid #ff0000;
+          min-height: 50px;
+          box-sizing: border-box;
+        }
       }
     }
   }

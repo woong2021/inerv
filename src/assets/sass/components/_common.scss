@@ -3,8 +3,55 @@
 // ----------------------------*
 
 h2{
+  margin-bottom: 20px;
+  
   font : {
     size: 1.5rem;
     weight: 600;
+  }
+}
+
+h3{
+  position: relative;
+  margin: 15px 0 10px;
+  left: 10px;
+
+  font : {
+    size: 1.125rem;
+    weight: 600;
+  }
+
+  &::before{
+    content:"";
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: -10px;
+    width: 3px;
+    height: 1rem;
+    background: #17616c;
+  }
+}
+
+h4{
+  position: relative;
+  margin: 15px 0 10px;
+  left: 10px;
+
+  font : {
+    size: .8rem;
+    weight: 400;
+  }
+
+  &::before{
+    content:"";
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: -10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: red;
   }
 }
