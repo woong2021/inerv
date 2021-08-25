@@ -1,7 +1,7 @@
 <template>
   <section id="content">
     <article>
-      공지사항
+      <h2>공지사항</h2>
     </article>
   </section>
 </template>
