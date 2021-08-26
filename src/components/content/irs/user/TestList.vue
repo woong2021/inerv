@@ -19,7 +19,7 @@
       <h3>결과 및 설명</h3>
       <div class="content-box">
         <h4>URL</h4>
-        <input type="text" value="http://localhost:8085/irs/api/json/meritcaryn/list.do" />
+        <input type="text" placeholder="http://localhost:8085/irs/api/json/meritcaryn/list.do" onfocus="this.placeholder=''" onblur="this.placeholder='http://localhost:8085/irs/api/json/meritcaryn/list.do'" />
 
         <h4>파라미터</h4>
         <table id="defaultTable">
@@ -52,12 +52,6 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-
-}
-</script>
 <style lang="scss">
   html{
     
